@@ -41,6 +41,8 @@ dependencies:
   open_file: ^3.1.0
   flutter_barcode_scanner: ^2.0.0
   barcode_widget: ^2.0.3
+  panorama: ^0.4.1
+  
 
 
 dev_dependencies:
@@ -69,6 +71,7 @@ flutter:
   assets:
     - assets/fruit.svg
     - assets/person.jpg
+    - Image/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
