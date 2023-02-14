@@ -26,12 +26,12 @@ class MyApp extends StatelessWidget {
     );
     // ignore: prefer_const_constructors
     return MaterialApp(title: 'Freedom', initialRoute: '/', routes: {
-      MyRoutes.homeroute: (context) => const HomePage(),
-      MyRoutes.compressorroute: (context) => const CompressorPage(),
-      MyRoutes.scannerroute: (context) => const ScannerPage(),
-      MyRoutes.webservicesroute: (context) => const WebServicePage(),
-      MyRoutes.loginpageroute: (context) => const LoginPage(),
-      MyRoutes.pdfpageroute: (context) => PdfPage(),
+      "/" : (context) => const HomePage(),
+      "/compressor" : (context) => const CompressorPage(),
+      "/scanner" : (context) => const ScannerPage(),
+      "/webservices" : (context) => const WebServicePage(),
+      "/loginpage" : (context) => const LoginPage(),
+      "/pdf_page" : (context) => PdfPage(),
     });
   }
 }

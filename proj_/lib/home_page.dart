@@ -92,50 +92,35 @@ class HomePage extends StatelessWidget {
 
                       // ignore: prefer_const_literals_to_create_immutables
                       children: [
-                        InkWell(
-                          onTap: () {
-                            Navigator.pushNamed(
-                                context, MyRoutes.compressorroute);
-                          },
-                          child: IconContainer(
-                            icon: NetworkImage(
-                                'https://cdn-icons-png.flaticon.com/512/1387/1387554.png'),
-                            text: 'Compressor',
-                          ),
+                        IconContainer(
+                          icon: NetworkImage(
+                              'https://cdn-icons-png.flaticon.com/512/1387/1387554.png'),
+                          text: 'Compressor',
+                          route: "/compressor",
                         ),
-                        InkWell(
-                          onTap: () {
-                            Navigator.pushNamed(context, MyRoutes.pdfpageroute);
-                          },
-                          child: IconContainer(
-                            text: 'Converter',
-                            icon: NetworkImage(
-                                'https://cdn-icons-png.flaticon.com/512/1201/1201530.png'),
-                          ),
+                        IconContainer(
+                          text: 'Converter',
+                          icon: NetworkImage(
+                              'https://cdn-icons-png.flaticon.com/512/1201/1201530.png'),
+                          route: '/'
                         ),
                       ],
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      // ignore: prefer_const_literals_to_create_immutables
                       children: [
-                        InkWell(
-                          onTap: () {
-                            Navigator.pushNamed(context, MyRoutes.scannerroute);
-                          },
-                          child: IconContainer(
-                              text: 'Scanner',
-                              icon: NetworkImage(
-                                  'https://cdn-icons-png.flaticon.com/512/5509/5509142.png')),
+                        IconContainer(
+                            text: 'Scanner',
+                            icon: NetworkImage(
+                                'https://cdn-icons-png.flaticon.com/512/5509/5509142.png'),
+                            route: "/scanner",
                         ),
-                        InkWell(
-                          onTap: () {
-                            Navigator.pushNamed(
-                                context, MyRoutes.webservicesroute);
-                          },
-                          child: IconContainer(
-                              text: 'Web Services',
-                              icon: NetworkImage(
-                                  'https://cdn-icons-png.flaticon.com/512/1086/1086507.png')),
+                        IconContainer(
+                            text: 'Web Services',
+                            icon: NetworkImage(
+                                'https://cdn-icons-png.flaticon.com/512/1086/1086507.png'),
+                            route: "/webservices",
                         )
                       ],
                     ),

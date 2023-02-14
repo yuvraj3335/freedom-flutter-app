@@ -5,8 +5,9 @@ import 'package:proj_/routes.dart';
 class IconContainer extends StatelessWidget {
   final String text;
   final ImageProvider icon;
+  final String route;
 
-  const IconContainer({super.key, required this.icon, required this.text});
+  const IconContainer({super.key, required this.icon, required this.text, this.route = '/'});
 
   @override
   Widget build(BuildContext context) {
@@ -24,10 +25,10 @@ class IconContainer extends StatelessWidget {
             backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
           ),
           onPressed: () {
-            Navigator.push(
+            Navigator.pushNamed(
                 context,
-                MaterialPageRoute(
-                    builder: (context) => MainPage(title: 'title')));
+                route
+                );
           },
           child: Image(
             image: icon,
