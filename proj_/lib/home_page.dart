@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:proj_/image_stitch.dart';
+
 import './routes.dart';
 import 'package:flutter/material.dart';
 import 'package:proj_/routes.dart';
@@ -139,15 +141,53 @@ class HomePage extends StatelessWidget {
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        IconContainer(
-                            text: 'Image Stitching',
-                            icon: NetworkImage(
-                                'https://cdn-icons-png.flaticon.com/512/5665/5665011.png')),
-                        SizedBox(
-                          height: 120,
-                          width: 120,
+                      children: [
+                        Column(
+                          children: [
+                            TextButton(
+                              style: ButtonStyle(
+                                shape: MaterialStateProperty.all<
+                                        RoundedRectangleBorder>(
+                                    RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                )),
+                                minimumSize: MaterialStateProperty.all<Size>(
+                                    const Size(120, 120)),
+                                maximumSize: MaterialStateProperty.all<Size>(
+                                    const Size(120, 120)),
+                                foregroundColor:
+                                    MaterialStateProperty.all<Color>(
+                                        Colors.white),
+                                backgroundColor:
+                                    MaterialStateProperty.all<Color>(
+                                        Colors.white),
+                              ),
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => ImageStitch()));
+                              },
+                              child: Image(
+                                image: NetworkImage(
+                                    'https://cdn-icons-png.flaticon.com/512/5665/5665011.png'),
+                                width: 80,
+                                height: 80,
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 6,
+                            ),
+                            Text(
+                              'Image Stitching',
+                              style: const TextStyle(
+                                fontSize: 16,
+                                // fontWeight: FontWeight.bold,
+                              ),
+                            )
+                          ],
                         ),
+                        //   IconContainer(text: 'Image Stitching',icon: NetworkImage(  'https://cdn-icons-png.flaticon.com/512/5665/5665011.png')),  SizedBox( height: 120, width: 120, ),
                       ],
                     )
                   ],
