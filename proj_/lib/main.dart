@@ -6,10 +6,10 @@ import 'package:proj_/login_page.dart';
 import 'package:proj_/ocr.dart';
 import 'package:proj_/pdf_api.dart';
 import 'package:proj_/pdf_page.dart';
+import 'package:proj_/tts.dart';
 
 import './routes.dart';
 import 'package:flutter/material.dart';
-import 'package:proj_/routes.dart';
 import '../../compressor_page.dart';
 import '../../webservices_page.dart';
 import '../../scanner_page.dart';
@@ -37,6 +37,7 @@ class MyApp extends StatelessWidget {
       "/pdf_page" : (context) => PdfPage(),
       "/ocr" : (context) => const Ocr(),
       "/qrpage" : (context) => MainPage(),
+      "/tts" : (context) => const Tts(),
     });
   }
 }

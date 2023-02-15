@@ -20,12 +20,12 @@ class ScannerPage extends StatelessWidget {
         backgroundColor: const Color(0xFFFFCFA1),
         elevation: 0,
         centerTitle: true,
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.menu,
-          ),
-        ),
+        // leading: IconButton(
+        //   onPressed: () {},
+        //   icon: const Icon(
+        //     Icons.menu,
+        //   ),
+        // ),
         shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(20),
@@ -86,7 +86,9 @@ class ScannerPage extends StatelessWidget {
                       IconContainer(
                           text: 'Read',
                           icon: NetworkImage(
-                              'https://azure.microsoft.com/svghandler/immersive-reader/?width=600&height=315')),
+                              'https://azure.microsoft.com/svghandler/immersive-reader/?width=600&height=315'),
+                          route: '/tts',
+                          ),
                     ],
                   ),
                   Row(
