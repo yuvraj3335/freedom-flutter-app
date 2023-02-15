@@ -65,7 +65,9 @@ class ScannerPage extends StatelessWidget {
                           text: 'QR Code',
                           icon: NetworkImage(
                               'https://cdn-icons-png.flaticon.com/512/3409/3409588.png'),
+                          route: '/qrpage',
                           ),
+                        
                       IconContainer(
                           text: 'Bar Code',
                           icon: NetworkImage(
@@ -78,7 +80,9 @@ class ScannerPage extends StatelessWidget {
                       IconContainer(
                           text: 'Text',
                           icon: NetworkImage(
-                              'https://cdn-icons-png.flaticon.com/512/5518/5518052.png')),
+                              'https://cdn-icons-png.flaticon.com/512/5518/5518052.png'),
+                          route: '/ocr',
+                          ),
                       IconContainer(
                           text: 'Read',
                           icon: NetworkImage(

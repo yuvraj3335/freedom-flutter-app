@@ -4,11 +4,11 @@ import 'package:proj_/qr_scan_page.dart';
 import 'package:proj_/button_widget.dart';
 
 class MainPage extends StatefulWidget {
-  final String title;
+  final String title = 'abc' ;
 
-  const MainPage({
-    required this.title,
-  });
+  // const MainPage({
+  //    this.title = = 'abc',
+  // });
 
   @override
   _MainPageState createState() => _MainPageState();

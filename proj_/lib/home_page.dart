@@ -102,7 +102,7 @@ class HomePage extends StatelessWidget {
                           text: 'Converter',
                           icon: NetworkImage(
                               'https://cdn-icons-png.flaticon.com/512/1201/1201530.png'),
-                          route: '/'
+                          route: '/converter'
                         ),
                       ],
                     ),

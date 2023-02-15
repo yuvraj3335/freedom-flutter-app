@@ -3,6 +3,8 @@
 import 'dart:convert';
 import 'package:proj_/home_page.dart';
 import 'package:proj_/login_page.dart';
+import 'package:proj_/ocr.dart';
+import 'package:proj_/pdf_api.dart';
 import 'package:proj_/pdf_page.dart';
 
 import './routes.dart';
@@ -28,10 +30,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(title: 'Freedom', initialRoute: '/', routes: {
       "/" : (context) => const HomePage(),
       "/compressor" : (context) => const CompressorPage(),
+      "/converter" : (context) => PdfPage(),
       "/scanner" : (context) => const ScannerPage(),
       "/webservices" : (context) => const WebServicePage(),
       "/loginpage" : (context) => const LoginPage(),
       "/pdf_page" : (context) => PdfPage(),
+      "/ocr" : (context) => const Ocr(),
+      "/qrpage" : (context) => MainPage(),
     });
   }
 }

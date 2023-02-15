@@ -42,6 +42,8 @@ dependencies:
   flutter_barcode_scanner: ^2.0.0
   barcode_widget: ^2.0.3
   panorama: ^0.4.1
+  google_mlkit_text_recognition: ^0.5.0
+  image_picker: ^0.8.6+1
   
 
 
@@ -68,8 +70,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - assets/
+  assets:
+    - assets/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
